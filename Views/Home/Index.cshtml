@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+	var requestCount = Context.Response.Headers["X-Request-Count"];
+	var resetTime = Context.Response.Headers["X-Reset-Time"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+	<p>if you refresh the page it means you send a request or requests with same url to server and you will see :</p>
+
+	<p>Request count here : @requestCount</p>
+	<p>Requests count will Be reset after this time : @resetTime</p>
+	<hr/>
+	<a class="btn btn-success" onclick="RefreshPage()" >Refresh</a>
+</div>
+@section Scripts{
+	<script>
+
+		function RefreshPage() {
+			window.location.reload();
+		}
+
+	</script>
+
+}
