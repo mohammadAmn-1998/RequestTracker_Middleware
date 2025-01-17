@@ -1,8 +1,8 @@
-# RequestLimiter_Middleware
+# RequestTracker_Middleware
 
 
 ## Overview
-This project provides middleware for an ASP.NET Core application to limit the number of requests a user can make within a specified time period. The middleware uses a `RequestLimiterService` to track and manage request counts and timestamps for each user.
+This project provides middleware for an ASP.NET Core application to Tracker the number of requests a user can make within a specified time period. The middleware uses a `RequestLimiterService` to track and manage request counts and timestamps for each user.
 
 ## Features
 - Configurable request limits and reset periods
